@@ -23,6 +23,7 @@ import { Grid } from '@material-ui/core'
 interface TaxPayerUserForm {
   firstName: string
   lastName: string
+  middleInitial: string
   ssid: string
   role: PersonRole
   address: Address
@@ -34,6 +35,7 @@ interface TaxPayerUserForm {
 const defaultTaxpayerUserForm: TaxPayerUserForm = {
   firstName: '',
   lastName: '',
+  middleInitial: '',
   ssid: '',
   role: PersonRole.PRIMARY,
   isForeignCountry: false,
@@ -48,6 +50,7 @@ const asPrimaryPerson = (formData: TaxPayerUserForm): PrimaryPerson => ({
   address: formData.address,
   firstName: formData.firstName,
   lastName: formData.lastName,
+  middleInitial: formData.middleInitial,
   ssid: formData.ssid.replace(/-/g, ''),
   isTaxpayerDependent: formData.isTaxpayerDependent,
   role: PersonRole.PRIMARY

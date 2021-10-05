@@ -16,6 +16,6 @@ export default class TaxPayer {
       .filter((p: Person | undefined) => p !== undefined)
       .map((p: Person | undefined) => p as Person)
 
-    return ps.map((p: Person) => `${p.firstName} ${p.lastName}`).join(', ')
+    return ps.map((p: Person) => `${p.firstName + " " + p.middleInitial} ${p.lastName}`).join(', ')
   }
 }

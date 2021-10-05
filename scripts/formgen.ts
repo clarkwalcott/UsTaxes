@@ -74,18 +74,19 @@ import { Field } from '../../pdfFiller'
 import { displayNumber, sumFields } from '../../irsForms/util'
 import { AccountType, FilingStatus, Information, State } from '../../redux/data'
 
-export class ${className} extends Form {
+export class ${className} implements Form {
   info: Information
   f1040: F1040
-  formName: string
-  state: State
+  formName = '${formName}'
+  state: State = 
 
   constructor(info: Information, f1040: F1040) {
     this.info = info
     this.f1040 = f1040
-    this.formName = '${formName}'
-    this.state = 'AK' // <-- Fill here
   }
+  
+  attachments = (): Form[] => []
+
 
 ${impls.join('\n')}
 

@@ -80,11 +80,13 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.1",
     "fast-check": "^2.17.0",
+    "fs.promises": "^0.1.2",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "2.4.1",
     "react-router-last-location": "^2.0.1",
     "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
     "typescript-eslint": "0.0.1-alpha.0"
   },
   "husky": {

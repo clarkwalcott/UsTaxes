@@ -10,6 +10,7 @@ export enum PersonRole {
 export interface Person {
   firstName: string
   lastName: string
+  middleInitial: string
   ssid: string
   role: PersonRole
 }

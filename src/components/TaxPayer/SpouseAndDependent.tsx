@@ -36,12 +36,14 @@ import { Person } from '@material-ui/icons'
 interface UserPersonForm {
   firstName: string
   lastName: string
+  middleInitial: string
   ssid: string
 }
 
 const blankUserPersonForm: UserPersonForm = {
   firstName: '',
   lastName: '',
+  middleInitial: '',
   ssid: ''
 }
 
