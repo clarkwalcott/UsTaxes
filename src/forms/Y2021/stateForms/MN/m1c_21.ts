@@ -3,7 +3,7 @@ import F1040 from '../../irsForms/F1040'
 import {Field} from 'ustaxes/core/pdfFiller'
 import {Information, State} from 'ustaxes/core/data'
 
-export class m1c21 extends Form {
+export class M1C21 extends Form {
   info: Information
   f1040: F1040
   formName: string
@@ -379,8 +379,8 @@ export class m1c21 extends Form {
   ])
 }
 
-const makem1c21 = (info: Information, f1040: F1040): m1c21 =>
-  new m1c21(info, f1040)
+const makem1c21 = (info: Information, f1040: F1040): M1C21 =>
+  new M1C21(info, f1040)
 
 export default makem1c21
 

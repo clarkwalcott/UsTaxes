@@ -4,6 +4,7 @@ import StateForm from 'ustaxes/core/stateForms/Form'
 import { Either } from 'ustaxes/core/util'
 import { createStateReturn as createStateReturnF } from '../../StateForms'
 import { StateFormError } from '../../StateForms'
+import m1_21 from "ustaxes/forms/Y2021/stateForms/MN/m1_21";
 
 export const noFilingRequirementStates: State[] = [
   'AK',
@@ -19,7 +20,9 @@ export const noFilingRequirementStates: State[] = [
 
 export const stateForms: {
   [K in State]?: (info: Information, f1040: F1040) => StateForm
-} = {}
+} = {
+  MN: m1_21
+}
 
 export const createStateReturn = (
   info: Information,

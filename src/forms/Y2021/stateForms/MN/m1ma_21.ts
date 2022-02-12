@@ -9,7 +9,7 @@ import {
   State
 } from 'ustaxes/core/data'
 
-export class m1ma21 extends Form {
+export class M1MA21 extends Form {
   info: Information
   f1040: F1040
   formName: string
@@ -345,8 +345,8 @@ export class m1ma21 extends Form {
   ])
 }
 
-const makem1ma21 = (info: Information, f1040: F1040): m1ma21 =>
-  new m1ma21(info, f1040)
+const makem1ma21 = (info: Information, f1040: F1040): M1MA21 =>
+  new M1MA21(info, f1040)
 
 export default makem1ma21
 
